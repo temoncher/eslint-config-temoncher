@@ -39,7 +39,6 @@ module.exports = {
         alphabetical: false,
       },
     ],
-    'vue/valid-v-slot': 0, // doesn't work with vuetify slot modifiers
     'vue/singleline-html-element-content-newline': 0,
   },
 };

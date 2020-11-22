@@ -5,15 +5,10 @@
 /** @type {LinterConfig} */
 module.exports = {
   env: {
-    browser: true,
+    node: true,
   },
-  plugins: [
-    'react',
-  ],
   extends: [
-    'plugin:import/react',
-    'airbnb',
-    'airbnb/hooks',
+    'plugin:node/recommended',
     './base',
   ],
 };

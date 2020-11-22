@@ -5,11 +5,11 @@
 /** @type {LinterConfig} */
 module.exports = {
   extends: [
+    'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'airbnb-typescript/base',
     './base',
-    'plugin:import/typescript',
   ],
   rules: {
     '@typescript-eslint/array-type': 1,
