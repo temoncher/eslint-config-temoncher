@@ -80,11 +80,18 @@ Using yarn:
 yarn add -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-2. Add `"extends": "temoncher/typescript"` to your `.eslintrc`
+2. Configure typescript parser and add `"extends": "temoncher/typescript"` to your `.eslintrc`:
 
 ```
 {
   ...
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: ['./tsconfig.json'],
+  },
+  plugins: [
+    '@typescript-eslint',
+  ],
   "extends": [
     ...,
     "temoncher/typescript",

@@ -13,10 +13,13 @@ module.exports = {
   rules: {
     '@typescript-eslint/array-type': 1,
     '@typescript-eslint/consistent-indexed-object-style': [1, 'record'],
-    '@typescript-eslint/consistent-type-assertions': {
-      assertionStyle: 'as',
-      objectLiteralTypeAssertions: 'never',
-    },
+    '@typescript-eslint/consistent-type-assertions': [
+      2,
+      {
+        assertionStyle: 'as',
+        objectLiteralTypeAssertions: 'never',
+      },
+    ],
     '@typescript-eslint/member-delimiter-style': [
       1,
       {
