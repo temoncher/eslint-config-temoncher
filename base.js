@@ -6,7 +6,7 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:import/warnings',
+    'plugin:import/recommended',
     'airbnb-base',
   ],
   rules: {
