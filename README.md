@@ -5,13 +5,13 @@ Personal set of super-strict eslint rules for various environments
 Install via npm:
 
 ```sh
-npm i -D eslint-config-temoncher
+npm i -D eslint eslint-config-temoncher
 ```
 
 Install via yarn:
 
 ```sh
-yarn add -D eslint-config-temoncher
+yarn add -D eslint eslint-config-temoncher
 ```
 
 ## Available configurations
@@ -71,13 +71,13 @@ Does NOT include `base` configuration
 Using npm:
 
 ```sh
-npm i -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-eslint/eslint-plugin
+npm i -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 Using yarn:
 
 ```sh
-yarn add -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-eslint/eslint-plugin
+yarn add -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 2. Add `"extends": "temoncher/typescript"` to your `.eslintrc`
