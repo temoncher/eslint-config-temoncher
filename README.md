@@ -18,7 +18,7 @@ yarn add -D eslint-config-temoncher
 
 Configurations can be combined. For example configuration for react-typescript project will look like:
 
-```json
+```
   {
     ...
     "extends": [
@@ -51,7 +51,7 @@ yarn add -D eslint-config-airbnb-base eslint-plugin-import
 
 2. Add `"extends": "temoncher/base"` to your `.eslintrc`
 
-```json
+```
 {
   ...
   "extends": [
@@ -82,7 +82,7 @@ yarn add -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-esl
 
 2. Add `"extends": "temoncher/typescript"` to your `.eslintrc`
 
-```json
+```
 {
   ...
   "extends": [
@@ -113,7 +113,7 @@ yarn add -D eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y esl
 
 2. Add `"extends": "temoncher/react"` to your `.eslintrc`
 
-```json
+```
 {
   ...
   "extends": [
@@ -144,7 +144,7 @@ yarn add -D eslint-plugin-import eslint-plugin-vue @vue/eslint-config-airbnb
 
 2. Add `"extends": "temoncher/vue"` to your `.eslintrc`
 
-```json
+```
 {
   ...
   "extends": [
