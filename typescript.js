@@ -96,6 +96,10 @@ module.exports = {
 
     'no-return-await': 0,
     '@typescript-eslint/return-await': 2,
+
+    // disable import unnecessary rules
+    'import/prefer-default-export': 0,
+    'import/extensions': 0,
   },
   overrides: [
     {

@@ -39,5 +39,9 @@ module.exports = {
       },
     ],
     'vue/singleline-html-element-content-newline': 0,
+
+    // disable import unnecessary rules
+    'import/prefer-default-export': 0,
+    'import/extensions': 0,
   },
 };

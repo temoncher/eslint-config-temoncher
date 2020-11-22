@@ -10,7 +10,6 @@ module.exports = {
     'airbnb-base',
   ],
   rules: {
-    'import/prefer-default-export': 0,
     'import/order': [
       1,
       {
@@ -38,6 +37,10 @@ module.exports = {
         ],
       },
     ],
+    // disable import unnecessary rules
+    'import/prefer-default-export': 0,
+    'import/extensions': 0,
+
     semi: 1,
     'comma-dangle': [
       1,

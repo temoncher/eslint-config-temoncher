@@ -21,5 +21,9 @@ module.exports = {
       2,
       { extensions: ['.js', '.jsx', '.tsx'] },
     ],
+
+    // disable import unnecessary rules
+    'import/prefer-default-export': 0,
+    'import/extensions': 0,
   },
 };

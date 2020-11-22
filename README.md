@@ -1,6 +1,6 @@
 # eslint-config-temoncher
 
-Personal set of super-strict eslint rules for various environments
+Personal set of super-strict eslint rules for various environments. The package is made so strict on purpose, to allow excluding unnecessary rules rather than adding new ones intentionally.
 
 ## Install config and core peer dependencies
 Via npm:
