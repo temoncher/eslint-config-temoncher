@@ -7,7 +7,6 @@ module.exports = {
   extends: [
     'plugin:vue/recommended',
     '@vue/airbnb',
-    './base',
   ],
   rules: {
     'vue/max-attributes-per-line': [

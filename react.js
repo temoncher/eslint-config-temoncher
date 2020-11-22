@@ -16,4 +16,10 @@ module.exports = {
     'airbnb/hooks',
     './base',
   ],
+  rules: {
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.tsx'] },
+    ],
+  },
 };
