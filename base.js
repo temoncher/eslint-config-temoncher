@@ -10,6 +10,34 @@ module.exports = {
     'airbnb-base',
   ],
   rules: {
+    'import/prefer-default-export': 0,
+    'import/order': [
+      1,
+      {
+        groups: [
+          'builtin',
+          'external',
+          'parent',
+          'sibling',
+          'index',
+        ],
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'parent',
+            position: 'before',
+          },
+        ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false,
+        },
+        pathGroupsExcludedImportTypes: [
+          'builtin',
+        ],
+      },
+    ],
     semi: 1,
     'comma-dangle': [
       1,
@@ -136,33 +164,6 @@ module.exports = {
       1,
       {
         afterColon: true,
-      },
-    ],
-    'import/order': [
-      1,
-      {
-        groups: [
-          'builtin',
-          'external',
-          'parent',
-          'sibling',
-          'index',
-        ],
-        pathGroups: [
-          {
-            pattern: '@/**',
-            group: 'parent',
-            position: 'before',
-          },
-        ],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: false,
-        },
-        pathGroupsExcludedImportTypes: [
-          'builtin',
-        ],
       },
     ],
   },
