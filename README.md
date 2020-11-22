@@ -2,6 +2,18 @@
 
 Personal set of super-strict eslint rules for various environments
 
+Install via npm:
+
+```sh
+npm i -D eslint-config-temoncher
+```
+
+Install via yarn:
+
+```sh
+yarn add -D eslint-config-temoncher
+```
+
 ## Available configurations
 
 Configurations can be combined. For example configuration for react-typescript project will look like:

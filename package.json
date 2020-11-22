@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-temoncher",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Personal set of super-strict eslint rules for various environments",
   "main": "base.js",
   "repository": {
