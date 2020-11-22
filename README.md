@@ -2,16 +2,17 @@
 
 Personal set of super-strict eslint rules for various environments
 
-Install via npm:
+## Install config and core peer dependencies
+Via npm:
 
 ```sh
-npm i -D eslint eslint-config-temoncher
+npm i -D eslint eslint-config-temoncher eslint-plugin-import
 ```
 
-Install via yarn:
+Via yarn:
 
 ```sh
-yarn add -D eslint eslint-config-temoncher
+yarn add -D eslint eslint-config-temoncher eslint-plugin-import
 ```
 
 ## Available configurations
@@ -35,21 +36,7 @@ Configurations can be combined. For example configuration for react-typescript p
 
 Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
 
-1. Install peer dependencies of `base` package:
-
-Using npm:
-
-```sh
-npm i -D eslint-config-airbnb-base eslint-plugin-import
-```
-
-Using yarn:
-
-```sh
-yarn add -D eslint-config-airbnb-base eslint-plugin-import
-```
-
-2. Add `"extends": "temoncher/base"` to your `.eslintrc`
+1. Add `"extends": "temoncher/base"` to your `.eslintrc`
 
 ```
 {
@@ -64,20 +51,20 @@ yarn add -D eslint-config-airbnb-base eslint-plugin-import
 
 ### Typescript
 
-Does NOT include `base` configuration
+Does NOT include `base` configuration.
 
-1. Install peer dependencies of `typescript` package:
+1. Install typescript-eslint parser and plugin, along with peer dependencies of `typescript` package:
 
 Using npm:
 
 ```sh
-npm i -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm i -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 Using yarn:
 
 ```sh
-yarn add -D eslint-config-airbnb-typescript eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
+yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 2. Configure typescript parser and add `"extends": "temoncher/typescript"` to your `.eslintrc`:
@@ -109,13 +96,13 @@ Does NOT include `base` configuration
 Using npm:
 
 ```sh
-npm i -D eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+npm i -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 Using yarn:
 
 ```sh
-yarn add -D eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+yarn add -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 2. Add `"extends": "temoncher/react"` to your `.eslintrc`
@@ -140,13 +127,13 @@ Does NOT include `base` configuration
 Using npm:
 
 ```sh
-npm i -D eslint-plugin-import eslint-plugin-vue @vue/eslint-config-airbnb
+npm i -D eslint-plugin-vue @vue/eslint-config-airbnb
 ```
 
 Using yarn:
 
 ```sh
-yarn add -D eslint-plugin-import eslint-plugin-vue @vue/eslint-config-airbnb
+yarn add -D eslint-plugin-vue @vue/eslint-config-airbnb
 ```
 
 2. Add `"extends": "temoncher/vue"` to your `.eslintrc`
