@@ -41,32 +41,29 @@ module.exports = {
     'import/prefer-default-export': 0,
     'import/extensions': 0,
 
-    semi: 1,
-    'comma-dangle': [
-      1,
-      'always-multiline',
-    ],
+    // [Possible errors](https://eslint.org/docs/rules/#possible-errors)
     'no-console': 2,
-    quotes: [
-      1,
-      'single',
-      'avoid-escape',
+
+    // [Best practices](https://eslint.org/docs/rules/#best-practices)
+    complexity: [2, 2],
+
+    // [Stylistic Issues](https://eslint.org/docs/rules/#stylistic-issues)
+    'function-call-argument-newline': [1, 'consistent'],
+    'func-style': [1, 'expression'],
+    'function-paren-newline': [1, 'multiline-arguments'],
+    'id-denylist': [
+      'error',
+      'data',
+      'err',
+      'e',
+      'cb',
+      'callback',
+      'handleChange',
+      'handleClick',
+      'handleSubmit',
+      'handleInput',
     ],
-    'no-trailing-spaces': 1,
-    indent: [
-      1,
-      2,
-    ],
-    'no-multiple-empty-lines': [
-      1,
-      {
-        max: 1,
-      },
-    ],
-    'eol-last': [
-      1,
-      'always',
-    ],
+    'prefer-exponentiation-operator': 2,
     'padding-line-between-statements': [
       1,
       {
@@ -124,51 +121,22 @@ module.exports = {
           'var',
         ],
       },
-    ],
-    'block-spacing': 1,
-    eqeqeq: [
-      1,
-      'always',
-    ],
-    'comma-spacing': [
-      1,
       {
-        before: false,
-        after: true,
+        blankLine: 'always',
+        prev: '*',
+        next: [
+          'return',
+        ],
       },
     ],
-    'func-call-spacing': [
-      1,
-      'never',
-    ],
-    'no-duplicate-imports': 2,
-    'newline-before-return': 1,
-    'object-curly-spacing': [
-      1,
-      'always',
-      {
-        arraysInObjects: true,
-        objectsInObjects: true,
-      },
-    ],
-    'padded-blocks': [
-      1,
-      'never',
-    ],
-    'space-infix-ops': 1,
-    'object-property-newline': [
-      1,
-      {
-        allowAllPropertiesOnSameLine: true,
-      },
-    ],
+
+    // [ES6](https://eslint.org/docs/rules/#ecmascript-6)
     'arrow-spacing': 1,
-    'key-spacing': [
-      1,
-      {
-        afterColon: true,
-      },
-    ],
+    'no-restricted-exports': [1, {
+      restrictedNamedExports: [
+        'default', // use `export default` to provide a default export
+        'then', // this will cause tons of confusion when your module is dynamically `import()`ed
+      ],
+    }],
   },
 };
-
