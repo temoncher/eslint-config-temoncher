@@ -3,6 +3,7 @@
 Personal set of super-strict eslint rules for various environments. The package is made so strict on purpose, to allow excluding unnecessary rules rather than adding new ones intentionally.
 
 ## Install config and core peer dependencies
+
 Via npm:
 
 ```sh
@@ -36,7 +37,21 @@ Configurations can be combined. For example configuration for react-typescript p
 
 Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
 
-1. Add `"extends": "temoncher/base"` to your `.eslintrc`
+1. Install peer dependencies of `base` package:
+
+Using npm:
+
+```sh
+npm i -D eslint-plugin-unicorn
+```
+
+Using yarn:
+
+```sh
+yarn add -D eslint-plugin-unicorn
+```
+
+2. Add `"extends": "temoncher/base"` to your `.eslintrc`
 
 ```
 {
