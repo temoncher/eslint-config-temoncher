@@ -20,7 +20,7 @@ yarn add -D eslint eslint-config-temoncher
 
 ## Available configurations
 
-### :javascript: JavaScript
+### JavaScript
 
 Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
 
@@ -51,7 +51,7 @@ yarn add -D eslint-plugin-import
 };
 ```
 
-### :typescript: TypeScript extends `javascript`
+### TypeScript extends `javascript`
 
 1. Install peer dependencies of [`javascript` package](#javascript)
 
@@ -86,7 +86,7 @@ yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @ty
 };
 ```
 
-### :react: React extends `javascript`
+### React extends `javascript`
 
 1. Install peer dependencies of [`javascript` package](#javascript)
 
@@ -114,7 +114,7 @@ yarn add -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 };
 ```
 
-### :vue: Vue extends `javascript`
+### Vue extends `javascript`
 
 > **⚠ WARNING: For Vue CLI projects only.**
 > This package expects you to have Vue CLI project with installed [@vue/cli-plugin-eslint](https://www.npmjs.com/package/@vue/cli-plugin-eslint).
