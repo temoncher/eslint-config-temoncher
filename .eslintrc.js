@@ -7,5 +7,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['./base'],
+  extends: [
+    require.resolve('./javascript'),
+  ],
 };

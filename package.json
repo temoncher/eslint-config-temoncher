@@ -1,11 +1,14 @@
 {
   "name": "eslint-config-temoncher",
-  "version": "1.1.5",
+  "version": "2.0.0",
   "description": "Personal set of super-strict eslint rules for various environments",
   "main": "base.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/temoncher/eslint-config-temoncher.git"
+  },
+  "scripts": {
+    "lint": "eslint ."
   },
   "keywords": [
     "airbnb",

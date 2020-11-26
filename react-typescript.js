@@ -1,4 +1,5 @@
-const baseRules = require('./rules/javascript');
+const javascriptRules = require('./rules/javascript');
+const reactRules = require('./rules/react');
 const typescriptRules = require('./rules/typescript');
 /**
  * @typedef {import('eslint').Linter.Config} LinterConfig
@@ -6,31 +7,29 @@ const typescriptRules = require('./rules/typescript');
 
 /** @type {LinterConfig} */
 module.exports = {
+  env: {
+    browser: true,
+  },
   plugins: [
     'unicorn',
     'import',
-    '@typescript-eslint',
+    'react',
   ],
   extends: [
     'eslint:recommended',
     'plugin:unicorn/recommended',
     'plugin:import/recommended',
+    'plugin:import/react',
+    'airbnb',
+    'airbnb/hooks',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'airbnb-typescript/base',
+    'airbnb-typescript',
   ],
   rules: {
-    ...baseRules,
+    ...javascriptRules,
+    ...reactRules,
     ...typescriptRules,
   },
-  overrides: [
-    {
-      // enable the rule specifically for TypeScript files
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/explicit-function-return-type': 1,
-      },
-    },
-  ],
 };
