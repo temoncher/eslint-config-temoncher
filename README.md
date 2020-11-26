@@ -7,16 +7,14 @@ For even more strict rules visit [Unicorn](https://github.com/sindresorhus/eslin
 ## Install config and core peer dependencies
 
 Via npm:
-
-```sh
-npm i -D eslint eslint-config-temoncher
-```
+  ```sh
+  npm i -D eslint eslint-config-temoncher
+  ```
 
 Via yarn:
-
-```sh
-yarn add -D eslint eslint-config-temoncher
-```
+  ```sh
+  yarn add -D eslint eslint-config-temoncher
+  ```
 
 ## Available configurations
 
@@ -25,94 +23,88 @@ yarn add -D eslint eslint-config-temoncher
 Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
 
 1. Install peer dependencies of `javascript` package:
+   Using npm:
 
-Using npm:
+   ```sh
+   npm i -D eslint-plugin-import
+   ```
 
-```sh
-npm i -D eslint-plugin-import
-```
+   Using yarn:
 
-Using yarn:
-
-```sh
-yarn add -D eslint-plugin-import
-```
+   ```sh
+   yarn add -D eslint-plugin-import
+   ```
 
 2. Add `"extends": "temoncher/javascript"` to your `.eslintrc`
-
-```
-{
-  ...
-  "extends": [
-    ...,
-    "temoncher/javascript",
-  ],
-  ...
-};
-```
+   ```
+   {
+     ...
+     "extends": [
+       ...,
+       "temoncher/javascript",
+     ],
+     ...
+   };
+   ```
 
 ### TypeScript extends `javascript`
 
 1. Install peer dependencies of [`javascript` package](#javascript)
 
 2. Install typescript-eslint parser and plugin, along with peer dependencies of `typescript` package:
+   Using npm:
 
-Using npm:
+   ```sh
+   npm i -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
+   ```
 
-```sh
-npm i -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
-```
+   Using yarn:
 
-Using yarn:
-
-```sh
-yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
-```
+   ```sh
+   yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
+   ```
 
 3. Configure typescript parser and add `"extends": "temoncher/typescript"` to your `.eslintrc`:
-
-```
-{
-  parserOptions: {
-    parser: '@typescript-eslint/parser',
-    project: ['./tsconfig.json'],
-  },
-  plugins: [
-    '@typescript-eslint',
-  ],
-  "extends": [
-    "temoncher/typescript",
-  ],
-};
-```
+   ```
+   {
+     parserOptions: {
+       parser: '@typescript-eslint/parser',
+       project: ['./tsconfig.json'],
+     },
+     plugins: [
+       '@typescript-eslint',
+     ],
+     "extends": [
+       "temoncher/typescript",
+     ],
+   };
+   ```
 
 ### React extends `javascript`
 
 1. Install peer dependencies of [`javascript` package](#javascript)
 
 2. Install peer dependencies of `react` package:
+   Using npm:
 
-Using npm:
+   ```sh
+   npm i -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+   ```
 
-```sh
-npm i -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
-```
+   Using yarn:
 
-Using yarn:
-
-```sh
-yarn add -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
-```
+   ```sh
+   yarn add -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+   ```
 
 3. Add `"extends": "temoncher/react"` to your `.eslintrc`
-
-```
-{
-  "extends": [
-    "temoncher/react",
-  ],
-};
-```
+   ```
+   {
+     "extends": [
+       "temoncher/react",
+     ],
+   };
+   ```
 
 ### Vue extends `javascript`
 
@@ -122,25 +114,23 @@ yarn add -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 1. Install peer dependencies of [`javascript` package](#javascript)
 
 2. Install peer dependencies of `vue` package:
+   Using npm:
 
-Using npm:
+   ```sh
+   npm i -D eslint-plugin-vue @vue/eslint-config-airbnb
+   ```
 
-```sh
-npm i -D eslint-plugin-vue @vue/eslint-config-airbnb
-```
+   Using yarn:
 
-Using yarn:
-
-```sh
-yarn add -D eslint-plugin-vue @vue/eslint-config-airbnb
-```
+   ```sh
+   yarn add -D eslint-plugin-vue @vue/eslint-config-airbnb
+   ```
 
 3. Add `"extends": "temoncher/vue"` to your `.eslintrc`
-
-```
-{
-  "extends": [
-    "temoncher/vue",
-  ],
-};
-```
+   ```
+   {
+     "extends": [
+       "temoncher/vue",
+     ],
+   };
+   ```
