@@ -77,13 +77,4 @@ module.exports = {
       ],
     },
   ],
-  'unicorn/filename-case': [
-    2,
-    {
-      cases: {
-        kebabCase: true,
-        pascalCase: true, // for component names
-      },
-    },
-  ],
 };

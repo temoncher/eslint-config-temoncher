@@ -4,11 +4,6 @@
 
 /** @type {LinterConfig} */
 module.exports = {
-  // [Plugin:Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
-  'unicorn/catch-error-name': 0, // Already covered by other rules
-  'unicorn/import-style': 0, // Very opinionated
-  'unicorn/no-reduce': 0, // Very opinionated
-
   // [Plugin:Import](https://github.com/benmosher/eslint-plugin-import)
   'import/order': [
     1,

@@ -6,12 +6,10 @@ const javascriptRules = require('./rules/javascript');
 /** @type {LinterConfig} */
 module.exports = {
   plugins: [
-    'unicorn',
     'import',
   ],
   extends: [
     'eslint:recommended',
-    'plugin:unicorn/recommended',
     'plugin:import/recommended',
     'airbnb-base',
   ],

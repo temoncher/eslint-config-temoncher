@@ -4,15 +4,4 @@ module.exports = {
     2,
     { extensions: ['.js', '.jsx', '.tsx'] },
   ],
-
-  // Overrides
-  'unicorn/filename-case': [
-    2,
-    {
-      cases: {
-        kebabCase: true,
-        pascalCase: true, // for component names
-      },
-    },
-  ],
 };
