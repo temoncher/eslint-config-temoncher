@@ -15,7 +15,7 @@ const resolveRules = (config) => {
 
   if (typeof config.extends === 'string') {
     /** @type {LinterConfig['rules']} */
-    const moduleRules = require(config.extends).rules;
+    const moduleRules = resolveRules(require(config.extends));
 
     return {
       ...moduleRules,
