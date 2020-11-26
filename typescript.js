@@ -6,10 +6,7 @@ const typescriptRules = require('./rules/typescript');
 
 /** @type {LinterConfig} */
 module.exports = {
-  plugins: [
-    'import',
-    '@typescript-eslint',
-  ],
+  plugins: ['import', '@typescript-eslint'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',

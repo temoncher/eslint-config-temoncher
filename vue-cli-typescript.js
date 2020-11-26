@@ -7,10 +7,7 @@ const vueRules = require('./rules/vue');
 
 /** @type {LinterConfig} */
 module.exports = {
-  plugins: [
-    'import',
-    'vue',
-  ],
+  plugins: ['import', 'vue'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',

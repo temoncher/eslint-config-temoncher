@@ -1,5 +1,10 @@
 const vueTemplateAirbnbRules = require('./vue-template-airbnb');
 
+/**
+ * @typedef {import('eslint').Linter.Config['rules']} Rules
+ */
+
+/** @type {Rules} */
 module.exports = {
   // [Plugin:Vue - Recommended] Overrides
   'vue/max-attributes-per-line': [
@@ -38,7 +43,11 @@ module.exports = {
   'vue/match-component-file-name': [
     2,
     {
-      extensions: ['vue', 'js', 'jsx'],
+      extensions: [
+        'vue',
+        'js',
+        'jsx',
+      ],
       shouldMatchCase: true,
     },
   ],

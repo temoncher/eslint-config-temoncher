@@ -5,9 +5,7 @@ const javascriptRules = require('./rules/javascript');
 
 /** @type {LinterConfig} */
 module.exports = {
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',

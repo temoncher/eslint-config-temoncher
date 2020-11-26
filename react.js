@@ -9,10 +9,7 @@ module.exports = {
   env: {
     browser: true,
   },
-  plugins: [
-    'import',
-    'react',
-  ],
+  plugins: ['import', 'react'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',

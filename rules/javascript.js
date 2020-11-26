@@ -1,8 +1,8 @@
 /**
- * @typedef {import('eslint').Linter.Config} LinterConfig
+ * @typedef {import('eslint').Linter.Config['rules']} Rules
  */
 
-/** @type {LinterConfig} */
+/** @type {Rules} */
 module.exports = {
   // [Plugin:Import](https://github.com/benmosher/eslint-plugin-import)
   'import/order': [
@@ -41,12 +41,15 @@ module.exports = {
 
   // [Best practices](https://eslint.org/docs/rules/#best-practices)
   complexity: [2, 2],
-  'no-param-reassign': ['error', {
-    props: true,
-    ignorePropertyModificationsFor: [
-      'acc', // for reduce accumulators
-    ],
-  }],
+  'no-param-reassign': [
+    2,
+    {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'acc', // for reduce accumulators
+      ],
+    },
+  ],
 
   // [Stylistic Issues](https://eslint.org/docs/rules/#stylistic-issues)
   'array-bracket-newline': [1, 'consistent'],
@@ -61,7 +64,7 @@ module.exports = {
   'func-style': [1, 'expression'],
   'function-paren-newline': [1, 'multiline-arguments'],
   'id-denylist': [
-    'error',
+    2,
     'data',
     'err',
     'e',
@@ -144,10 +147,7 @@ module.exports = {
   'no-restricted-exports': [
     1,
     {
-      restrictedNamedExports: [
-        'default', // use `export default` to provide a default export
-        'then', // this will cause tons of confusion when your module is dynamically `import()`ed
-      ],
+      restrictedNamedExports: ['default', 'then'],
     },
   ],
 };

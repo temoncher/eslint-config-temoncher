@@ -2,73 +2,60 @@
 
 Personal set of super-strict eslint rules for various environments. The package is made so strict on purpose, to allow excluding unnecessary rules rather than adding new ones intentionally.
 
+For even more strict rules visit [Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+
 ## Install config and core peer dependencies
 
 Via npm:
 
 ```sh
-npm i -D eslint eslint-config-temoncher eslint-plugin-import
+npm i -D eslint eslint-config-temoncher
 ```
 
 Via yarn:
 
 ```sh
-yarn add -D eslint eslint-config-temoncher eslint-plugin-import
+yarn add -D eslint eslint-config-temoncher
 ```
 
 ## Available configurations
 
-Configurations can be combined. For example configuration for react-typescript project will look like:
-
-```
-  {
-    ...
-    "extends": [
-      ...,
-      "temoncher/base",
-      "temoncher/typescript",
-      "temoncher/react",
-    ],
-    ...
-  };
-```
-
-### Base
+### JavaScript
 
 Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
 
-1. Install peer dependencies of `base` package:
+1. Install peer dependencies of `javascript` package:
 
 Using npm:
 
 ```sh
-npm i -D eslint-plugin-unicorn
+npm i -D eslint-plugin-import
 ```
 
 Using yarn:
 
 ```sh
-yarn add -D eslint-plugin-unicorn
+yarn add -D eslint-plugin-import
 ```
 
-2. Add `"extends": "temoncher/base"` to your `.eslintrc`
+2. Add `"extends": "temoncher/javascript"` to your `.eslintrc`
 
 ```
 {
   ...
   "extends": [
     ...,
-    "temoncher/base",
+    "temoncher/javascript",
   ],
   ...
 };
 ```
 
-### Typescript
+### TypeScript extends `javascript`
 
-Does NOT include `base` configuration.
+1. Install peer dependencies of `javascript` package
 
-1. Install typescript-eslint parser and plugin, along with peer dependencies of `typescript` package:
+2. Install typescript-eslint parser and plugin, along with peer dependencies of `typescript` package:
 
 Using npm:
 
@@ -82,29 +69,24 @@ Using yarn:
 yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-2. Configure typescript parser and add `"extends": "temoncher/typescript"` to your `.eslintrc`:
+3. Configure typescript parser and add `"extends": "temoncher/typescript"` to your `.eslintrc`:
 
 ```
 {
-  ...
-  parser: '@typescript-eslint/parser',
   parserOptions: {
+    parser: '@typescript-eslint/parser',
     project: ['./tsconfig.json'],
   },
   plugins: [
     '@typescript-eslint',
   ],
   "extends": [
-    ...,
     "temoncher/typescript",
   ],
-  ...
 };
 ```
 
-### React
-
-Does NOT include `base` configuration
+### React extends `javascript`
 
 1. Install peer dependencies of `react` package:
 
@@ -124,18 +106,13 @@ yarn add -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 
 ```
 {
-  ...
   "extends": [
-    ...,
     "temoncher/react",
   ],
-  ...
 };
 ```
 
-### Vue
-
-Does NOT include `base` configuration
+### Vue extends `javascript`
 
 1. Install peer dependencies of `vue` package:
 
@@ -155,11 +132,8 @@ yarn add -D eslint-plugin-vue @vue/eslint-config-airbnb
 
 ```
 {
-  ...
   "extends": [
-    ...,
     "temoncher/vue",
   ],
-  ...
 };
 ```

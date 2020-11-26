@@ -1,3 +1,8 @@
+/**
+ * @typedef {import('eslint').Linter.Config['rules']} Rules
+ */
+
+/** @type {Rules} */
 module.exports = {
   '@typescript-eslint/array-type': 1,
   '@typescript-eslint/consistent-indexed-object-style': [1, 'record'],
@@ -29,7 +34,11 @@ module.exports = {
     },
     {
       selector: 'variable',
-      format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+      format: [
+        'camelCase',
+        'PascalCase',
+        'UPPER_CASE',
+      ],
     },
     {
       selector: 'function',
