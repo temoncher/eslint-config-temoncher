@@ -154,13 +154,12 @@ Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-
 
 ### Vue-Typescript extends `javascript`, `vue`, `typescript`
 
+> **⚠ WARNING: For Vue CLI projects only.**
+> This package expects you to have Vue CLI project with installed [@vue/cli-plugin-eslint](https://www.npmjs.com/package/@vue/cli-plugin-eslint).
+
 1. Install peer dependencies of [`javascript` package](#javascript)
 
-2. Install peer dependencies of [`vue` package](#vue-extends-javascript)
-
-2. Install peer dependencies of [`typescript` package](#typescript-extends-javascript)
-
-4. Add `"extends": "temoncher/vue-typescript"` to your `.eslintrc`
+2. Add `"extends": "temoncher/vue-typescript"` to your `.eslintrc`
    ```
    {
      "extends": [
