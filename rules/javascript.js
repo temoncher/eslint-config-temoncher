@@ -40,7 +40,7 @@ module.exports = {
   'no-console': 2,
 
   // [Best practices](https://eslint.org/docs/rules/#best-practices)
-  complexity: [2, 2],
+  complexity: [2, 6],
   'no-param-reassign': [
     2,
     {
