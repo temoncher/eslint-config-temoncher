@@ -127,23 +127,21 @@ Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-
 > **⚠ WARNING: For Vue CLI projects only.**
 > This package expects you to have Vue CLI project with installed [@vue/cli-plugin-eslint](https://www.npmjs.com/package/@vue/cli-plugin-eslint).
 
-1. Install peer dependencies of [`javascript` package](#javascript)
-
-2. Install peer dependencies of `vue` package:
+1. Install peer dependencies of `vue` package:
 
    Using npm:
 
    ```sh
-   npm i -D eslint-plugin-vue @vue/eslint-config-airbnb
+   npm i -D @vue/eslint-config-airbnb
    ```
 
    Using yarn:
 
    ```sh
-   yarn add -D eslint-plugin-vue @vue/eslint-config-airbnb
+   yarn add -D @vue/eslint-config-airbnb
    ```
 
-3. Add `"extends": "temoncher/vue"` to your `.eslintrc`
+2. Add `"extends": "temoncher/vue"` to your `.eslintrc`
    ```
    {
      "extends": [
@@ -157,7 +155,19 @@ Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-
 > **⚠ WARNING: For Vue CLI projects only.**
 > This package expects you to have Vue CLI project with installed [@vue/cli-plugin-eslint](https://www.npmjs.com/package/@vue/cli-plugin-eslint).
 
-1. Install peer dependencies of [`javascript` package](#javascript)
+1. Install peer dependencies of `vue` package:
+
+   Using npm:
+
+   ```sh
+   npm i -D @vue/eslint-config-airbnb
+   ```
+
+   Using yarn:
+
+   ```sh
+   yarn add -D @vue/eslint-config-airbnb
+   ```
 
 2. Add `"extends": "temoncher/vue-typescript"` to your `.eslintrc`
    ```
