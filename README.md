@@ -38,12 +38,9 @@ Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-
 2. Add `"extends": "temoncher/javascript"` to your `.eslintrc`
    ```
    {
-     ...
      "extends": [
-       ...,
        "temoncher/javascript",
      ],
-     ...
    };
    ```
 
