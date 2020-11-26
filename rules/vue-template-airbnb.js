@@ -11,18 +11,21 @@ const { resolveRules } = require('../utils/resolve-rules');
  * @typedef {import('eslint').Linter.Config['rules']} Rules
  */
 
-const vuePluginRulesNames = Object.keys(vuePlugin.rules);
+const vuePluginRulesNames = Object.keys(vuePlugin.rules)
+  .map((name) => `vue/${name}`);
 const recommendedRules = resolveRules(vuePluginRecommended);
-const prefixedairbnbConfigRules = Object.entries(resolveRules(airbnbConfig));
-const vueAirbnbRulesCollection = prefixedairbnbConfigRules
-  .filter(
-    ([name]) => vuePluginRulesNames.includes(name) && !(name in recommendedRules),
-  )
-  .map(([name, value]) => /** @type{[string, any]} */([`vue/${name}`, value]));
-const vueAirbnbRules = vueAirbnbRulesCollection.reduce((acc, [key, val]) => ({
-  ...acc,
-  [key]: val,
-}), {});
+const prefixedairbnbConfigRules = Object.entries(resolveRules(airbnbConfig))
+  .map(([name, val]) => /** @type {[string, any]} */([`vue/${name}`, val]));
 
-/** @type {Rules} */
+const vueAirbnbRulesCollection = prefixedairbnbConfigRules
+  .filter(([name]) => vuePluginRulesNames.includes(name) && !(name in recommendedRules));
+
+const vueAirbnbRules = vueAirbnbRulesCollection.reduce(
+  (acc, [key, val]) => ({
+    ...acc,
+    [key]: val,
+  }),
+  /** @type {Rules} */({}),
+);
+
 module.exports = vueAirbnbRules;
