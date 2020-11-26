@@ -71,9 +71,6 @@ Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-
        parser: '@typescript-eslint/parser',
        project: ['./tsconfig.json'],
      },
-     plugins: [
-       '@typescript-eslint',
-     ],
      "extends": [
        "temoncher/typescript",
      ],
