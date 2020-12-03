@@ -166,13 +166,13 @@ Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-
    Using npm:
 
    ```sh
-   npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+   npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript
    ```
 
    Using yarn:
 
    ```sh
-   yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+   yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript
    ```
 
 4. Add `"extends": "temoncher/vue-typescript"` to your `.eslintrc`
