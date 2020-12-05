@@ -28,7 +28,7 @@ module.exports = {
     2,
     {
       selector: 'default',
-      format: ['camelCase'],
+      format: ['camelCase', 'PascalCase'],
       leadingUnderscore: 'forbid',
       trailingUnderscore: 'forbid',
     },
