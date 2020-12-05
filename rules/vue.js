@@ -53,6 +53,13 @@ module.exports = {
   ],
   'vue/no-duplicate-attr-inheritance': 2,
   'vue/no-empty-component-block': 1,
+  'vue/no-reserved-component-names': [
+    2,
+    {
+      disallowVueBuiltInComponents: true,
+      disallowVue3BuiltInComponents: true,
+    },
+  ],
   'vue/padding-line-between-blocks': [2, 'always'],
   'vue/require-name-property': 1,
   'vue/v-for-delimiter-style': 1,

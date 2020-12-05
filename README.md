@@ -134,13 +134,13 @@ Extension of [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-
    Using npm:
 
    ```sh
-   npm i -D @vue/eslint-config-airbnb
+   npm i -D eslint-plugin-vue @vue/eslint-config-airbnb
    ```
 
    Using yarn:
 
    ```sh
-   yarn add -D @vue/eslint-config-airbnb
+   yarn add -D eslint-plugin-vue @vue/eslint-config-airbnb
    ```
 
 3. Add `"extends": "temoncher/vue-cli"` to your `.eslintrc`
