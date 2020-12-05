@@ -8,7 +8,11 @@
     "url": "git+https://github.com/temoncher/eslint-config-temoncher.git"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "np"
+  },
+  "engines": {
+    "node": ">=10"
   },
   "keywords": [
     "airbnb",
@@ -44,13 +48,25 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0"
-  },
-  "engines": {
-    "node": ">=10"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "np": "^7.0.0"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.14.0",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "np": {
+    "yarn": true
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
